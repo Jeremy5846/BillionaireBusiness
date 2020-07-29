@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="456.aspx" />
     <Content Include="App_Data\JojoArtwork.mdf" />
     <Content Include="App_Data\JojoArtwork_log.ldf">
       <DependentUpon>JojoArtwork.mdf</DependentUpon>
@@ -150,13 +149,6 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="456.aspx.cs">
-      <DependentUpon>456.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="456.aspx.designer.cs">
-      <DependentUpon>456.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Artist\Artist.aspx.cs">
       <DependentUpon>Artist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

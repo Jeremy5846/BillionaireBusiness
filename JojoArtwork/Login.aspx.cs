@@ -23,9 +23,14 @@ namespace JojoArtwork
         protected void Login1_LoggedIn1(object sender, EventArgs e)
         {
             if (Roles.IsUserInRole(Login1.UserName, "Artist"))
+            {                
                 Response.Redirect("~/Artist/ArtistMenu.aspx");
-            else if (Roles.IsUserInRole(Login1.UserName, "Customer"))
+            }
+            else if (Roles.IsUserInRole(Login1.UserName, "Customer")) {
+                Session["CUSTOMER_ID"] = Login1.UserName;
                 Response.Redirect("~/Customer/CustomerMenu.aspx");
+            }
+               
         }
     }
 }
