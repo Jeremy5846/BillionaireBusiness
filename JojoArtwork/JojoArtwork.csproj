@@ -76,7 +76,7 @@
     <Content Include="Artist\EditProfile.aspx" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
     <Content Include="css\customStyleSheet.css" />
-    <Content Include="Customer\ChangePassword.aspx" />
+    <Content Include="ChangePassword.aspx" />
     <Content Include="Customer\CustomerMenu.aspx" />
     <Content Include="Customer\EditProfile.aspx" />
     <Content Include="Customer\ShoppingList.aspx" />
@@ -171,11 +171,11 @@
     <Compile Include="Artist\EditProfile.aspx.designer.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Customer\ChangePassword.aspx.cs">
+    <Compile Include="ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Customer\ChangePassword.aspx.designer.cs">
+    <Compile Include="ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer\CustomerMenu.aspx.cs">
