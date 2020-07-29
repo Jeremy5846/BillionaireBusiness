@@ -1,0 +1,20 @@
+﻿.footerlinks {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+    .footerlinks:hover {
+        color: dodgerblue;
+    }
+
+   
+
+ 
+    
+#footer1 {
+    background-color:black ;
+}
+
+#footer2 {
+    background-color: black;
+}
