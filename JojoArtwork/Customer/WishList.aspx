@@ -16,28 +16,16 @@
         <div>
             <span class="auto-style1"><strong>WishLISTTTTTT</strong></span><br />
             <br />
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Customer/ShoppingList.aspx">Back to Shooppingggg</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Customer/ShoppingList.aspx">Back to Shoopping</asp:HyperLink>
             <br />
             <br />
-            <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ART_ID,CUSTOMER_ID" DataSourceID="SqlDataSource1">
+            <asp:GridView ID="GridView1" runat="server" DataKeyNames="ART_ID" OnRowDeleting="OnRowDeleting">
                 <Columns>
-                    <asp:CommandField ShowDeleteButton="True" />
-                    <asp:BoundField DataField="ART_ID" HeaderText="ART_ID" ReadOnly="True" SortExpression="ART_ID" />
-                    <asp:BoundField DataField="ART_NAME" HeaderText="ART_NAME" SortExpression="ART_NAME" />
-                    <asp:BoundField DataField="ART_COST" HeaderText="ART_COST" SortExpression="ART_COST" />
-                    <asp:BoundField DataField="CUSTOMER_ID" HeaderText="CUSTOMER_ID" ReadOnly="True" SortExpression="CUSTOMER_ID" />
+                <asp:CommandField ButtonType="Link" ShowDeleteButton="true" ItemStyle-Width="150" />
                 </Columns>
             </asp:GridView>
             <br />
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JojoArtworkConnectionString %>" OldValuesParameterFormatString="arr_{0}" DeleteCommand="DELETE FROM Wishlist WHERE (ART_ID = @arr_ART_ID) AND (CUSTOMER_ID = @arr_CUSTOMER_ID)" SelectCommand="SELECT W.ART_ID, A.ART_NAME, A.ART_COST, W.CUSTOMER_ID FROM Wishlist AS W INNER JOIN Art AS A ON W.ART_ID = A.ART_ID">
-                <DeleteParameters>
-                    <asp:Parameter Name="arr_ART_ID" Type="Int32" />
-                    <asp:Parameter Name="arr_CUSTOMER_ID" Type="Int32" />
-                </DeleteParameters>
-            </asp:SqlDataSource>    
-            <br />
-        </div>
+        </div>          
     </form>
 </body>
 </html>

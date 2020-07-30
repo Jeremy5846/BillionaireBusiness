@@ -53,8 +53,7 @@
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:JojoArtworkConnectionString %>" SelectCommand="SELECT * FROM [Art]">
             </asp:SqlDataSource>
             <br />
-            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-            <br />
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
             <br />
             <br />

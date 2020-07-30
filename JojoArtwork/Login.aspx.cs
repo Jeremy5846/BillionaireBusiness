@@ -27,7 +27,7 @@ namespace JojoArtwork
                 Response.Redirect("~/Artist/ArtistMenu.aspx");
             }
             else if (Roles.IsUserInRole(Login1.UserName, "Customer")) {
-                Session["CUSTOMER_ID"] = Login1.UserName;
+                Session["USERNAME"] = Login1.UserName;
                 Response.Redirect("~/Customer/CustomerMenu.aspx");
             }
                
