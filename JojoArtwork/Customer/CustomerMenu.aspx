@@ -16,6 +16,9 @@
         <p>
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Customer/ShoppingList.aspx">shopping</asp:HyperLink>
         </p>
+         <p>
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Customer/PurchaseHistory.aspx">Purchase History</asp:HyperLink>
+        </p>
     </form>
 </body>
 </html>

@@ -46,7 +46,7 @@
                     ARTIST_ID:
                     <asp:Label ID="ARTIST_IDLabel" runat="server" Text='<%# Eval("ARTIST_ID") %>' />
                     <br />
-                    &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Add to Wishlist" />
+                    &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Add to Wishlist" OnClientClick="javascript:alert('Item added to wishlist successfully')"  />
                     <br />
                 </ItemTemplate>
             </asp:Repeater>

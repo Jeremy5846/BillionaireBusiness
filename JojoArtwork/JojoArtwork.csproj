@@ -78,6 +78,7 @@
     <Content Include="css\customStyleSheet.css" />
     <Content Include="Customer\CustomerMenu.aspx" />
     <Content Include="Customer\EditProfile.aspx" />
+    <Content Include="Customer\PurchaseHistory.aspx" />
     <Content Include="Customer\ShoppingList.aspx" />
     <Content Include="Customer\WishList.aspx" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
@@ -181,6 +182,13 @@
     </Compile>
     <Compile Include="Customer\EditProfile.aspx.designer.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\PurchaseHistory.aspx.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\PurchaseHistory.aspx.designer.cs">
+      <DependentUpon>PurchaseHistory.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer\ShoppingList.aspx.cs">
       <DependentUpon>ShoppingList.aspx</DependentUpon>

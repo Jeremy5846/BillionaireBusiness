@@ -19,9 +19,30 @@
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Customer/ShoppingList.aspx">Back to Shoopping</asp:HyperLink>
             <br />
             <br />
-            <asp:GridView ID="GridView1" runat="server" DataKeyNames="ART_ID" OnRowDeleting="OnRowDeleting">
+            <asp:GridView ID="GridView1" runat="server" DataKeyNames="ART_ID" OnRowDeleting="OnRowDeleting" AutoGenerateColumns="False">
                 <Columns>
-                <asp:CommandField ButtonType="Link" ShowDeleteButton="true" ItemStyle-Width="150" />
+                <asp:TemplateField HeaderText="ART NAME" ItemStyle-Width="150">
+                    <ItemTemplate>
+                        <asp:Label ID="lblArtId" runat="server" Text='<%# Eval("ART_NAME") %>'></asp:Label>
+                    </ItemTemplate>                  
+<ItemStyle Width="150px"></ItemStyle>
+
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="ART PIC" ItemStyle-Width="150">
+                    <ItemTemplate>
+                        <asp:Image ID="Image1" runat="server" Height="199px" ImageUrl='<%# Eval("ART_FILEPATH") %>' Width="202px" />
+                    </ItemTemplate>                   
+<ItemStyle Width="150px"></ItemStyle>
+
+                </asp:TemplateField>
+                     <asp:TemplateField HeaderText="ART COST" ItemStyle-Width="150">
+                    <ItemTemplate>
+                        <asp:Label ID="lblArtCost" runat="server" Text='<%# Eval("ART_COST") %>'></asp:Label>
+                    </ItemTemplate>                   
+<ItemStyle Width="150px"></ItemStyle>               
+
+                </asp:TemplateField>
+                <asp:CommandField ButtonType="Link" ShowDeleteButton="true" ItemStyle-Width="150" ><ItemStyle Width="150px"></ItemStyle></asp:CommandField>
                 </Columns>
             </asp:GridView>
             <br />

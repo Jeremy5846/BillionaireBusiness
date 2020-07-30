@@ -56,7 +56,7 @@ namespace WishListFunction
             con.Open();
             String customerid = Session["ID"].ToString();
             //retrieve data
-            String strSelect = "SELECT W.ART_ID ,A.ART_NAME , A.ART_COST, W.CUSTOMER_ID FROM WISHLIST W, ART A WHERE W.ART_ID = A.ART_ID AND W.CUSTOMER_ID = @customerid";
+            String strSelect = "SELECT W.ART_ID, A.ART_NAME ,A.ART_FILEPATH , A.ART_COST, W.CUSTOMER_ID FROM WISHLIST W, ART A WHERE W.ART_ID = A.ART_ID AND W.CUSTOMER_ID = @customerid";
             SqlCommand cmdSelect = new SqlCommand(strSelect, con);
 
             cmdSelect.Parameters.AddWithValue("@customerid", customerid);
